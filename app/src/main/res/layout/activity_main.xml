@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+   <TextView
+       android:id="@+id/activityText"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="#DF5E13"
+       android:textSize="32sp"
+       app:layout_constraintBottom_toTopOf="@id/switchButton"
+       app:layout_constraintHorizontal_bias="0.501"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.761"
+       tools:text="Text" />
+
+   <TextView
+       android:id="@+id/timeView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       tools:text="Double Text!!!"
+       android:textSize="64sp"
+       android:textColor="#34AFEC"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent"/>
+
+   <Switch
+       android:id="@+id/switchButton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:onClick="finishMainActivity"
+       android:textColor="#8013E0"
+       android:shadowColor="#8013E0"
+       android:textSize="32sp"
+       app:layout_constraintBottom_toTopOf="@id/timeView"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.865" />
+
+   <Switch
+       android:id="@+id/keep_on_switch"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/keep_on"
+       android:textColor="#FFFFFF"
+       android:onClick="keepMainActivity"
+       app:layout_constraintRight_toRightOf="parent"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/user_name"
+       android:textSize="24sp"
+       android:textColor="#C80839"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="@id/timeView"/>
+
+</android.support.constraint.ConstraintLayout>
